@@ -1,0 +1,158 @@
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+%\usepackage[<option1, option2>]{hyperref}
+\documentclass{./sjkelly_resume} 					% Use the custom resume.cls style
+\usepackage[compact]{titlesec} 					%compact section spacing
+%\usepackage{mdwlist} %compact enumerating
+%\usepackage{tabularx}
+\setstretch{0.7}
+
+%----------------------------------------------------------------------------------------
+% NAME
+%----------------------------------------------------------------------------------------
+\name{Stephen Kelly} % Your name
+\address{\large{14 Preston Ln.  $\bullet$  Hicksville, NY 11801}} % Your address
+\address{\large{Github: sjkelly}} % Online Presence
+\address{\large{kd2cca@gmail.com \\ 1-516-589-2698}} % Your phone number and email
+
+\begin{document}
+\titlespacing{\section}{0pt}{*0}{*0}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+
+%----------------------------------------------------------------------------------------
+% OBJECTIVE
+%----------------------------------------------------------------------------------------
+\begin{mainSection}{Objective}
+	Interesting projects in mathematical modelling and computational geometry.
+\end{mainSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{mainSection}{Education}
+	{Worcester Polytechnic Institute (WPI)}, {Worcester, Massachusetts} \hfill {Est. May. 2016 } \\ 
+	\textbf{Bachelor of Science in Mathematical Sciences}\\
+	{\small {\bf Related Coursework:} Numerical Methods, Vector and Tensor Calculus, Graph Theory, Mathematical Modeling with Differential Equations, Unified Robotics: Actuation, Unified Robotics: Sensing, Systems Programming, Statics}
+\end{mainSection}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{mainSection}{Related Projects}
+	\begin{experienceSubsection}{Contributor}{March 2014 - Present}{Julia}{github.com/julialang}
+		\item Contribute bugfixes and documentation to the core language and base library
+		\item Maintain Meshes.jl package for 3D mesh loading, processing, and writing
+		\item Submit fixes to packages for future compatiblity based on Julia development
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Open Source Independent Project}{July 2013 - Aug. 2013}{TextCAD}{github.com/textcad}
+		\item Developed methods for 3D model description using object serialization in Python
+		\item Wrote a parser with extensive unit tests to convert JSON files of serialized objects to OpenSCAD
+		\item Explored methods of programmed parametric mechanical design using objects and datasets
+		\item Implemented the final concepts in a parametric 2D gantry system using an ``H-Bot'' configuration
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Open Source Internship Project}{June 2013 - July 2013}{Test Fixture}{Ultimachine}
+		\item Developed the mechanics, software, and schematics for a test fixture to benchmark completed circuit boards
+		\item Used sensors and software to determine the condition of each circuit board and log results to a database
+	\end{experienceSubsection}
+\end{mainSection}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{mainSection}{Work Experience}
+	\begin{experienceSubsection}{Voxel8}{Aug. 2014 - May 2015}{Software Engineer}{Somerville, Massachusetts}
+		\item Led the development of a path planner for 3D printing of thermoplastic and conductive paste
+		\item Researched, implemented, and documented geometric algorithms for use in path planning
+		\item Worked with electric teams to update and patch printer firmware
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Lewis Group}{May 2014 - Aug. 2014}{Research Assistant}{Harvard University, Massachusetts}
+		\item Researched existing path planners and architectual piplines for 3D printing
+		\item Developed mesh slicing and polygon operation libraries
+		\item Worked with researchers to develop path sequences for truss fabrication on 3D printers
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Advanced Manufacturing Research Institute}{Aug. 2013}{Fellow}{Rice University, Texas}
+		\item Developed an open source toolchain for the inkjet printing of genetically modified bacteria
+		\item Created appropriate firmware modifications to drive inkjet heads on a 3D printer
+		\item Wrote path planning software for multiple inkjets in Python using OpenCV 
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Ultimachine}{Jan. 2013 - Aug. 2013}{Intern}{South Pittsburg, Tennessee}
+		\item Developed open source hardware testing solutions for internal manufacturing processes
+		\item Created product documentation and corresponding procedures
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Mill-Max Mfg.}{June 2012 - Aug. 2012}{Intern}{Oyster Bay, New York}
+		\item Handled and organized customer data and engineering drawings
+		\item Developed and implemented multi-material rapid prototyping systems for internal use
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{WPI Washburn Machine Shops}{Sept. 2011 - Oct. 2012}{Lab Assistant}{WPI}
+		\item Helped maintain the facilities by monitoring the labs and cleaning equipment
+		\item Coordinated with Teaching Assistants to setup materials and machines for laboratory classes
+	\end{experienceSubsection}
+	\begin{experienceSubsection}{Panera Bread}{June 2010 - Nov. 2010}{Associate}{Hicksville, New York}
+		\item Worked in a team to process guests' orders
+		\item Maintained a fast paced work progression while completing secondary tasks
+	\end{experienceSubsection}	
+\end{mainSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{mainCompactSection}{Skills}
+
+	\renewcommand{\tabcolsep}{0pt}
+
+	\begin{tabular}{l l}
+
+	
+	\skillSubsection{Computer Systems}{GNU/Linux (Fedora, Debian/Ubuntu, Android), Windows, MacOS X}
+	\skillSubsection{Office Software}{Microsoft Office(Word, Excel, PowerPoint), Libre Office, Google Drive}
+	\skillSubsection{Development Environments}{Git, Subversion, Eclipse, QT Creator, Arduino}
+	\skillSubsection{Mechanical Design Tools}{OpenSCAD, Auto/LibreCAD, SolidWorks, Fusion360}
+	\skillSubsection{Computer Languages}{Julia, Python, C, C++, Javascript, \LaTeX}
+	\skillSubsection{Certifications}{Technician FCC License (KD2CCA)}
+	\skillSubsection{Languages}{English (Native), Spanish (Conversant)}
+	\end{tabular}
+
+\end{mainCompactSection}
+
+
+%----------------------------------------------------------------------------------------
+% ACTIVITIES
+%----------------------------------------------------------------------------------------
+%\begin{mainCompactSection}{Activities}
+%	
+%	\begin{generalSubsection}
+%		{Lab Manager}{WPI}{2011 - Present}{CollabLab}
+%	\end{generalSubsection}
+%	\begin{generalSubsection}
+%		{Member}{WPI}{2011 - Present}{SmartMouse}
+%	\end{generalSubsection}	
+%	\begin{generalSubsection}
+%		{Founder}{WPI}{2012 - Present}{RepRap User Group}
+%	\end{generalSubsection}	
+%	\begin{generalSubsection}
+%		{Treasurer}{WPI}{2013 - Present}{Running Club}
+%	\end{generalSubsection}
+%	\begin{generalSubsection}
+%		{Member}{WPI}{2013 - Present}{Society for Industrial and Applied Mathematics}
+%	\end{generalSubsection}
+%\end{mainCompactSection}
+
+%----------------------------------------------------------------------------------------
+% AWARDS SECTION
+%----------------------------------------------------------------------------------------
+%\begin{mainCompactSection}{Awards}
+	
+%	\begin{generalSubsection}
+%		{award name}{location}{dates}{type}
+%	\end{generalSubsection}
+	
+
+%\end{mainCompactSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
